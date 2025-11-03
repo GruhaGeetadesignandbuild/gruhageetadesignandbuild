@@ -1,0 +1,36 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f4f4f4;
+}
+
+.social-container {
+  display: flex;
+  gap: 15px;
+}
+
+.social-container a {
+  text-decoration: none;
+  color: white;
+  background: #333;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.social-container a:hover {
+  transform: scale(1.1);
+}
+
+/* Individual colors */
+.facebook { background: #3b5998; }
+.twitter { background: #1da1f2; }
+.instagram { background: #e4405f; }
+.linkedin { background: #0077b5; }
