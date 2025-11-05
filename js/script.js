@@ -15,6 +15,27 @@ window.addEventListener('scroll', () => {
 });
 
 
+    // Simple fade-in animation on scroll
+    const elements = document.querySelectorAll('.text-section, .image-section');
+    window.addEventListener('scroll', () =>
+     {
+      elements.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+          el.style.opacity = '1';
+          el.style.transform = 'translateY(0)';
+          el.style.transition = 'all 0.8s ease';
+        }
+      });
+    });
+  
+// Simple script to add hover animation or alert
+document.querySelectorAll(".gallery-item").forEach(item => {
+  item.addEventListener("click", () => {
+    alert("You clicked on an image!");
+  });
+});
+
   // Support multiple toggles that share behavior
   var toggles = document.querySelectorAll('[id^="mobile-toggle"]');
   toggles.forEach(t => {
@@ -37,7 +58,7 @@ window.addEventListener('scroll', () => {
   });
 
 // Initialize EmailJS (replace with your user ID)
-emailjs.init("RCTeDp3-4TI2qRUrs");
+emailjs.init("T7qwvQi7pUlbg2mmh");
 
 const form = document.getElementById("contactForm");
 const statusMsg = document.getElementById("form-status");
@@ -49,8 +70,8 @@ form.addEventListener("submit", function(e) {
   statusMsg.className = "status-msg";
   statusMsg.textContent = "Sending message...";
 
-  const serviceID = "service_s0j3ygk";
-  const templateID = "template_e7mrp3k";
+  const serviceID = "service_l8enl6n";
+  const templateID = "template_k8qraog";
 
   emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
