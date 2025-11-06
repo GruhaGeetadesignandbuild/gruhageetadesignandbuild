@@ -222,6 +222,18 @@
     </div>
   </footer>-->
 
+<script>
+  // Redirect to loader if user opens this page directly
+    if (!sessionStorage.getItem("visitedOnce")) {
+      window.location.href = "splash.html";
+    }
+    // When the user reloads the page, reset loader
+    window.addEventListener("beforeunload", () => {
+      sessionStorage.removeItem("visitedOnce");
+    });
+  
+</script>
+
   <script src="js/script.js"></script>
 </body>
 </html>

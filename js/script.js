@@ -4,6 +4,10 @@ document.addEventListener('DOMContentLoaded', function () {
   var yrs = document.querySelectorAll('#year, #year2, #year3, #year4');
   yrs.forEach(el => el && (el.textContent = new Date().getFullYear()));
 
+
+   
+    
+
 // Optional simple animation or interaction
 window.addEventListener('scroll', () => {
   const header = document.querySelector('header');

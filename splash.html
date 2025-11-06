@@ -43,8 +43,11 @@
   <script>
     // Redirect after 5 seconds
     setTimeout(() => {
+            sessionStorage.setItem("visitedOnce", "true");
+
       window.location.href = "index.html";
-    }, 5000);
+
+    }, 3000);
 
     // Or redirect immediately on click
     document.getElementById("logo").addEventListener("click", function() {
