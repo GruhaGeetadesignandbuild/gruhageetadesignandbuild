@@ -553,6 +553,6 @@ h2{font-family:"Playfair Display",serif;margin-bottom:8px}
 }
 
 /* Mobile tap */
-.gallery-item.active img {
+.gallery-item.hover img {
   transform: scale(1.12);
 }
